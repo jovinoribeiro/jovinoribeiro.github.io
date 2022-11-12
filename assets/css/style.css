@@ -1,0 +1,309 @@
+
+
+
+
+/* Hero Section */
+#hero {
+    width: 100%;
+    height: 60vh;
+    background: url("../img/header.jpg") center center;
+    background-size: cover;
+    position: relative;
+    /* margin-top: 70px; */
+    padding: 0;
+}
+
+#hero::before {
+    content: "";
+    background: rgba(79, 81, 82, 0.7);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#hero .container {
+    z-index: 2;
+}
+
+#hero h1 {
+    margin: 0 0 10px 0;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    color: #fff;
+}
+
+#hero h2 {
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+
+#hero .btn {
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Section */
+section {
+    padding: 60px 0;
+}
+
+.section-bg {
+    background-color: #f7fbfe;
+}
+
+section .title {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+section .title h2 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+section .title h2::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: #ddd;
+    bottom: 1px;
+    left: calc(50% - 60px);
+}
+
+section .title h2::after { 
+    content: "";
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #3498db;
+    bottom: 0;
+    left: calc(50% - 20px);
+}
+
+/* What we do */
+.what-we-do .icon-box {
+    text-align: center;
+    padding: 30px 20px;
+    transition: all ease-in-out 0.3s;
+    background: #fff;
+}
+
+.what-we-do .icon-box .icon {
+    margin: 0 auto;
+    width: 64px;
+    height: 64px;
+    background: #eaf4fb;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    transition: ease-in-out 0.3s;
+}
+
+.what-we-do .icon-box .icon i {
+    color: #3498db;
+    font-size: 28px;
+}
+
+.what-we-do .icon-box h4 {
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.what-we-do .icon-box p {
+    line-height: 24px;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.what-we-do .icon-box:hover {
+    border-color: #fff;
+    box-shadow: 250px 0 250px 0 rgba(0, 0, 0, 0.1);
+}
+
+.what-we-do .icon-box:hover .icon i {
+    color: #3498db;
+}
+
+
+/* About Us */
+#about-us li {
+    list-style: none;
+}
+
+/* Contact */
+.contact .info {
+    padding:30px;
+    /* background: rgb(133, 133, 209); */
+    border-radius: 4px;
+    /* border:1px solid black; */
+    width: 100%;
+}
+
+.contact .info i {
+    font-size: 20px;
+    color: #3498db;
+    float: left;
+    width: 44px;
+    height: 44px;
+    background: #eaf4fb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+}
+
+.contact .info h4 {
+    padding-left: 60px;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color:#7a6960;
+}
+
+.contact .info p {
+    padding: 0 0 10px 60px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #ab9d95;
+}
+
+.contact .info .address p {
+    padding-top: 5px;
+}
+
+.contact .info .email:hover i,
+.contact .info .address:hover i,
+.contact .info .facebook:hover i {
+    background-color: #3498db;
+    color: #fff;
+}
+
+.contact .email-form {
+    width: 100%;
+    padding: 30px;
+    /* box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12); */
+}
+
+.contact .email-form .form-group {
+    padding-bottom: 8px;
+}
+
+.contact .email-form input,
+.contact .email-form textarea {
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 14px;
+}
+
+.contact .email-form input {
+    height: 44px;
+}
+
+.contact .email-form textarea {
+    padding: 10px 12px;
+}
+
+/* Footer */
+#footer {
+    padding: 0 0 30px 0;
+    color: #444444;
+    background: #f7fbfe;
+    font-size:14px;
+}
+
+.newsletter {
+    background: #e3f2fd;
+    font-size: 15px;
+    padding: 50px;
+}
+
+.newsletter h4 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #444444;
+    position: relative;
+    padding-bottom: 12px;
+}
+
+.newsletter form {
+    margin-top: 30px;
+    background: #fff;
+    padding: 6px 10px;
+    position: relative;
+    border-radius: 4px;
+    text-align: left;
+    border: 1px solid #b6daf2;
+}
+
+.newsletter form input[type=email] {
+    border: 0;
+    padding: 4px 8px;
+    width: calc(100% - 100px);
+}
+
+.newsletter form input[type=submit] {
+    position: absolute;
+  top: 0;
+  right: -2px;
+  bottom: 0;
+  border: 0;
+  background: none;
+  font-size: 16px;
+  padding: 0 20px 2px 20px;
+  background: #3498db;
+  color: #fff;
+  transition: 0.3s;
+  border-radius: 0 4px 4px 0;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Call to action */
+.cta {
+    background: linear-gradient(rgba(103, 176, 209, 0.8), rgba(103, 176, 209, 0.8)), url("../img/cta-bg.jpg") fixed center center;
+    background-size: cover;
+    padding: 60px 0;
+  }
+  
+  .cta h3 {
+    color: #fff;
+    font-size: 28px;
+    font-weight: 700;
+  }
+  
+  .cta p {
+    color: #fff;
+  }
+  
+  .cta .cta-btn {
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 8px 28px;
+    border-radius: 25px;
+    transition: 0.5s;
+    margin-top: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    color: #fff;
+  }
+  
+  .cta .cta-btn:hover {
+    border-color: #fff;
+  }
