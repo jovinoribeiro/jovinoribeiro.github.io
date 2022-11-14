@@ -19,18 +19,18 @@ h1, h2, h3, h4, h5, h6 {
 
   
 /* Header */
-/* #header {
-    height: 60px;
+#header {
+    /* height: 60px; */
     transition: all 0.5s;
     z-index: 997;
     background-color: #f7fbfe;
     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-} */
+}
 
 #header .navbar-brand {
     color: #3498db;
-    font-weight: 700;
-    font-size: 35px;
+    /* font-weight: 700;
+    font-size: 35px; */
 }
 
 /* Navigation Bar */ 
@@ -130,9 +130,9 @@ h1, h2, h3, h4, h5, h6 {
     #hero {
       height: calc(100vh - 70px);
     }
-  }
+}
   
-  @media (max-width: 768px) {
+@media (max-width: 768px) {
     #hero h1 {
       font-size: 30px;
       line-height: 36px;
@@ -142,6 +142,10 @@ h1, h2, h3, h4, h5, h6 {
       font-size: 18px;
       line-height: 24px;
       margin-bottom: 30px;
+    }
+
+    .email p {
+        overflow-wrap: break-word;
     }
   }
 
