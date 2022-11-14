@@ -19,23 +19,29 @@ h1, h2, h3, h4, h5, h6 {
 
   
 /* Header */
-#header {
+/* #header {
     height: 60px;
     transition: all 0.5s;
     z-index: 997;
     background-color: #f7fbfe;
-    /* box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1); */
-}
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+} */
 
 #header .navbar-brand {
     color: #3498db;
+    font-weight: 700;
+    font-size: 35px;
 }
 
-/* Navigation Bar */
+/* Navigation Bar */ 
+.nav-bar, .navbar-coolapse {
+    background-color: #f7fbfe;
+}
 .navbar-nav a {
     text-transform: uppercase;
     margin-left: 10px;
     margin-right: 10px;
+    font-weight: 600;
 }
 
 .btn-more {
@@ -120,7 +126,7 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #4ea5e0;
 }
 
-/* @media (max-width: 992px) {
+@media (max-width: 992px) {
     #hero {
       height: calc(100vh - 70px);
     }
@@ -137,7 +143,7 @@ h1, h2, h3, h4, h5, h6 {
       line-height: 24px;
       margin-bottom: 30px;
     }
-  } */
+  }
 
 /* Common Section */
 section {
