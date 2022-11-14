@@ -12,7 +12,9 @@
     <!-- TODO: Favicons -->
 
     <!-- Google Fonts -->
-    <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet"> -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
 
     <!-- Vendor CSS Files -->
     <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css" />
@@ -25,13 +27,12 @@
 <body>
 
     <!-- Header -->
-    <header id="header">
-        <div class="container-fluid d-flex align-items-center justify-content-between"
-            style="background-color: #e3f2fd;">
-            <div class="logo">
-                <h1>PSCDA</h1>
-            </div>
-            <nav class="navbar navbar-expand-lg navbar-light  order-lg-0">
+    <header id="header" class="fixed-top">
+        <div class="container">
+            <!-- <div class="logo">
+                <h1><a href="#">PSCDA</a></h1>
+            </div> -->
+            <nav class="navbar navbar-expand-lg navbar-light order-lg-0">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#">PSCDA</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -41,31 +42,26 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div class="navbar-nav">
-                            <a class="nav-link" aria-current="page" href="#">What we do</a>
-                            <a class="nav-link" href="#">Weekly Updates</a>
-                            <a class="nav-link" href="#">Dance Instructions</a>
-                            <a class="nav-link" href="#">About us</a>
-                            <a class="nav-link" href="#">Photos</a>
-                            <a class="nav-link" href="#">Volunteer</a>
-                            <a class="nav-link" href="#">Contact</a>
+                            <a class="nav-link" aria-current="page" href="#what-we-do">What we do</a>
+                            <a class="nav-link" href="#about-us">About us</a>
+                            <a class="nav-link" href="#weekly-updates">Weekly Updates</a>
+                            <a class="nav-link" href="#dance-instructions">Dance Lessons</a>
+                            <a class="nav-link" href="#volunteer">Volunteer</a>
+                            <a class="nav-link" href="#contact">Contact us</a>
                         </div>
                     </div>
                 </div>
             </nav>
-            <div class="header-social-links d-flex align-items-center">
-                <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-                <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-            </div>
         </div>
     </header>
 
     <!-- Hero -->
     <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
         <div class="container text-center">
-            <h1>Palm Springs Country Dance Association</h1>
-            <h2>An Inclusive LGBTQIA+ organization</h2>
-            <h2>Two-stepping and line dancing every Friday</h2>
-            <a href="#what-we-do" class="btn btn-info">Learn More</a>
+            <h1>Welcome to</h1>
+            <h1><span>Palm Springs Country Dance Association</span></h1>
+            <h2>We are an inclusive LGBTQIA+ organization</h2>
+            <a href="#what-we-do" class="btn-learn-more">Learn More</a>
         </div>
     </section>
 
@@ -76,11 +72,12 @@
             <div class="container">
                 <div class="title">
                     <h2>What We Do</h2>
+                    <p>Two-stepping and line dancing every Friday</p>
                 </div>
                 <div class="row">
-                    <div class="col-lg-4 cold-md-6 d-flex align-items-stretch">
+                    <div class="col-lg-4 cold-md-6 d-flex">
                         <div class="icon-box">
-                            <div class="icon"><i class="bi bi-dribbble"></i></div>
+                            <div class="icon"><i class="bi bi-file-music"></i></div>
                             <h4>We dance</h4>
                             <p>Every Friday night from 7:30PM to 10:00PM at Step By Step Dance Studio, located at
                                 <a target="_blank"
@@ -93,10 +90,9 @@
                                 <a href="#">line dances</a>.
                             </p>
                             <p>Admission is $5.00</p>
-                            <div>
-                                <br>
-                                <a class="btn btn-outline-info" href="#" role="button">weekly events details</a>
-                            </div>
+                            <!-- <div>
+                                <a class="btn-more" href="#" role="button">weekly updates</a>
+                            </div> -->
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
@@ -106,10 +102,9 @@
                             <p>We always have a lesson from 7:00PM to 7:30PM before open dancing.</p>
                             <p>We offer line dance and partner dance lessons (no partner needed)</p>
                             <p>Lessons are free of charge.</p>
-                            <div>
-                                <br>
-                                <a class="btn btn-outline-info" href="#" role="button">dance instructions details</a>
-                            </div>
+                            <!-- <div>
+                                <a class="btn-more" href="#" role="button">dance lessons</a>
+                            </div> -->
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
@@ -118,11 +113,84 @@
                             <h4>We build community</h4>
                             <p>We produce exceptional country western dance events that cultivate community,
                                 volunteerism, and inclusivity within and beyond the LGBTQ+ community.</p>
-                            <div>
-                                <br>
-                                <a class="btn btn-outline-info" href="#" role="button">photos</a>
+                            <!-- <div class="align-text-bottom">
+                                <a class="btn-more" href="#" role="button">pictures</a>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us -->
+        <section id="about-us" class="about-us section-bg">
+            <div class="container">
+                <div class="title">
+                    <h2>About Us</h2>
+                </div>
+                <div class="row d-flex align-items-center">
+                    <div class="col-lg-6">
+                        <img src="assets/img/us1.jpg" class="img-fluid">
+                    </div>
+                    <div class="col-lg-6 pt-4 pt-lg-0">
+                        <div class="row mission-vision">
+                            <div class="col-md-6">
+                                <i class="bi bi-receipt"></i>
+                                <h4>Our Mission</h4>
+                                <p>
+                                    We are an organization dedicated to country-western dance instruction and the
+                                    presentation
+                                    of country-western dance events for the lesbian, gay, bisexual and transgender
+                                    community and
+                                    its friends.
+                                </p>
+                            </div>
+                            <div class="col-md-6">
+                                <i class="bi bi-eye"></i>
+                                <h4>Our Vision</h4>
+                                <p>
+                                    We aspire to be the leading all-inclusive country western dance organization in the
+                                    Coachella Valley.
+                                </p>
                             </div>
                         </div>
+                        <div class="row">
+                            <div>
+                                <h5>Our Values</h5>
+                                <p>We are an all-volunteer, community supported organization that:</p>
+                                <ul>
+                                    <li><i class="bi bi-check"></i> promotes the advancement of country western dance
+                                        through quality dance education.</li>
+                                    <li><i class="bi bi-check"></i> values the contributions of our donors and
+                                        volunteers
+                                        while creating an environment of respect and gratitude.</li>
+                                    <li><i class="bi bi-check"></i> celebrates our identities as members and allies of
+                                        the LGBTQ+ community.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- <h4>Our Mission</h4>
+                                <p>
+                                    We are an organization dedicated to country-western dance instruction and the presentation
+                                    of country-western dance events for the lesbian, gay, bisexual and transgender community and
+                                    its friends.
+                                </p>
+                                <h4>Our Vision</h4>
+                                <p>
+                                    We aspire to be the leading all-inclusive country western dance organization in the
+                                    Coachella Valley.
+                                </p>
+                                <h4>Our Values</h4>
+                                <p>We are an all-volunteer, community supported organization that:</p>
+                                <ul>
+                                    <li><i class="bi bi-check"></i> promotes the advancement of country western dance
+                                        through quality dance education.</li>
+                                    <li><i class="bi bi-check"></i> values the contributions of our donors and volunteers
+                                        while creating an environment of respect and gratitude.</li>
+                                    <li><i class="bi bi-check"></i> celebrates our identities as members and allies of
+                                        the LGBTQ+ community.</li>
+                                </ul> -->
                     </div>
                 </div>
             </div>
@@ -133,8 +201,9 @@
             <div class="container">
                 <div class="title">
                     <h2>Weekly Updates</h2>
+                    <p>Here you can find information about our upcoming dance and future events</p>
                 </div>
-                <div class="row">
+                <div class="row d-flex justify-content-center">
                     <img src="https://drive.google.com/uc?id=14xQn4xzxKfyKLNbKSkqArBXh5Q1oVgbo" class="img-fluid"
                         alt="pscda weekly schedule">
                 </div>
@@ -142,37 +211,65 @@
         </section>
 
         <!-- Dance instructions section -->
-        <section id="dance-instructions" class="dance-instructions">
+        <section id="dance-instructions" class="dance-instructions section-bg">
             <div class="container">
                 <div class="title">
-                    <h2>Dance Instructions</h2>
+                    <h2>Dance Lessons</h2>
+                    <p>New to Country Dancing? Check out our lessons</p>
                 </div>
-                <div class="row">
+                <div class="row d-flex align-items-center">
                     <div class="col-lg-6 col-md-6 pt-4 pt-lg-0">
-                        <h4>New to Country Dancing? Check out our Lessons</h4>
-                        <p>Lessons are offered every Friday from 7:00PM to 7:30PM. </p>
+                        <i class="bi bi-boombox"></i>
+                        <h4>Lessons</h4>
                         <ul>
-                            <li><i class="bx bx-check-double"></i> The first Friday of every month is a line dance
+                            <li><i class="bi bi-check"></i>Lessons are offered every Friday from 7:00PM to 7:30PM. </li>
+                            <li><i class="bi bi-check"></i> The first Friday of every month is a line dance
                                 lesson. All other Fridays are partner
                                 dance lessons including two-step, country waltz, shadow and more. </li>
-                            <li><i class="bx bx-check-double"></i> No partner is needed</li>
-                            <li><i class="bx bx-check-double"></i> Beginners are
+                            <li><i class="bi bi-check"></i> No partner is needed</li>
+                            <li><i class="bi bi-check"></i> Beginners are
                                 especially encouraged to take advantage of lessons twice a week. </li>
-                            <li><i class="bx bx-check-double"></i> Smooth leather-soled shoes recommended (cowboy
+                            <li><i class="bi bi-check"></i> Smooth leather-soled shoes recommended (cowboy
                                 boots!), along with some patience and a desire to have some fun. </li>
                         </ul>
 
                         <p>Click <a href="#">here</a> to learn the unspoken rules of the dance floor.</p>
                     </div>
                     <div class="col-lg-6 col-md-6 pt-4 pt-lg-0">
-                        <img src="assets/img/back-to-school.jpg" class="img-fluid" alt="">
+                        <img src="assets/img/teach1.jpg" class="img-fluid" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Volunteer  -->
+        <section id="volunteer" class="volunteer">
+            <div class="container">
+                <div class="title">
+                    <h2>Support Us</h2>
+                    <p>Help us thrive by volunteering</p>
+                </div>
+                <div class="row d-flex align-items-center">
+                    <div class="col-lg-6">
+                        <img src="assets/img/volunteer.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-lg-6 pt-4 pt-lg-0">
+                        <i class="bi bi-heart"></i>
+                        <h4>Front Door Volunteer</h4>
+                        <p>We are an all volunteer and community supported organization. </p>
+                        <p>Front Door Volunteers greet dancers at the door and collect
+                            admission fees.
+                        </p>
+                        <p><em><u>Volunteers get free admission for the evening</u></em></p>
+                        <p>Help us by becoming a Front Door Volunteer. </p>
+                        <a href="#" class="btn-more">Sign Up Now</a>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Photos -->
-        <section id="photos" class="photos">
+        <section id="photos" class="photos d-none">
             <div class="container">
                 <div class="title">
                     <h2>Photos</h2>
@@ -188,87 +285,8 @@
             </div>
         </section>
 
-        <!-- About Us -->
-        <section id="about-us" class="about-us">
-            <div class="container">
-                <div class="title">
-                    <h2>About Us</h2>
-                </div>
-                <div class="row d-flex">
-                    <div class="col-lg-6">
-                        <img src="https://via.placeholder.com/600x400" class="img-fluid">
-                    </div>
-                    <div class="col-lg-6 pt-4 pt-lg-0">
-                        <h4>Our Vision</h4>
-                        <p>
-                            We aspire to be the leading all-inclusive country western dance organization in the
-                            Coachella Valley.
-                        </p>
-                        <h4>Our Mission</h4>
-                        <p>
-                            We are an organization dedicated to country-western dance instruction and the presentation
-                            of country-western dance events for the lesbian, gay, bisexual and transgender community and
-                            its friends.
-                        </p>
-                        <h4>Our Values</h4>
-                        <p>We are an all-volunteer, community supported organization that:</p>
-                        <ul>
-                            <li><i class="bi bi-check"></i> promotes the advancement of country western dance
-                                through quality dance education.</li>
-                            <li><i class="bi bi-check"></i> values the contributions of our donors and volunteers
-                                while creating an environment of respect and gratitude.</li>
-                            <li><i class="bi bi-check"></i> celebrates our identities as members and allies of
-                                the LGBTQ+ community.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Volunteer  -->
-        <section id="volunteer" class="volunteer">
-            <div class="container">
-                <div class="title">
-                    <h2>Support Us</h2>
-                    <p>Help us thrive by volunteering</p>
-                </div>
-                <div class="row d-flex">
-                    <div class="col-lg-6">
-                        <img src="assets/img/volunteer.png" class="img-fluid" alt="">
-                    </div>
-                    <div class="col-lg-6 pt-4 pt-lg-0">
-                        <div class="icon-box">
-                            <div class="icon"><i class="bi bi-dribbble"></i></div>
-                        </div>
-                        <h4>Front Door Volunteer</h4>
-                        <p>We are an all-volunteer, community supported organization. </p>
-                        <p>Help us by becoming a Front Door Volunteer. </p>
-                        <p>
-                            Front Door Volunteers sign up for a 30-minute shift, greet dancers at the door and collect
-                            their admission.
-                        </p>
-                        <p><em><u>Volunteers get free admission for the evening</u></em></p>
-                        <p>Want to help? Click on button below.</p>
-                        <button class="btn btn-info">Sign Up Now</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="cta" class="cta">
-            <div class="container aos-init aos-animate" data-aos="zoom-in">
-                <div class="text-center">
-                    <h3>Call To Action</h3>
-                    <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                        mollit anim id est laborum.</p> <a class="cta-btn" href="#">Call To Action</a>
-                </div>
-            </div>
-        </section>
-
-
         <!-- Contact -->
-        <section id="contact" class="contact">
+        <section id="contact" class="contact section-bg">
             <div class="container">
                 <div class="title">
                     <h2>Contact Us</h2>
@@ -320,8 +338,7 @@
                                         placeholder="Message" required></textarea>
                                 </div>
                             </div>
-                            <div class="text-center mt-2"><button type="submit" class="btn btn-info">Send
-                                    Message</button></div>
+                            <div class="text-center mt-2"><button type="submit" class="btn-more">Send Message</div>
                         </form>
                     </div>
                 </div>
@@ -356,16 +373,16 @@ test
 
         <div class="container py-4">
             <div class="row">
-                <div class="d-flex justify-content-between">
-                    <div class="copyright">
-                        © Copyright <strong>PSCDA</strong>. All rights reserved. <br>
-                        Designed by <a href="">Onivoj</a>
-                    </div>
-                    <div class="social">
+                <div class="copyright d-flex justify-content-center">
+                    © Copyright <strong>PSCDA</strong>. All rights reserved.
+                    <!-- <br>
+                        Designed by <a href="">Onivoj</a> -->
+                </div>
+                <!-- <div class="social">
                         <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
                         <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-                    </div>
-                </div>
+                    </div> -->
+
             </div>
         </div>
     </footer>

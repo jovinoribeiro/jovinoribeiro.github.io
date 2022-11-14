@@ -1,6 +1,61 @@
+/* Common HTML  */
+body {
+    font-family: "Open Sans", sans-serif;
+    color: #444444;
+}
 
+a {
+    color: #3498db;
+    text-decoration:none;
+}
 
+a:hover {
+    color: #5faee3;
+}
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Raleway", sans-serif;
+}
+
+  
+/* Header */
+#header {
+    height: 60px;
+    transition: all 0.5s;
+    z-index: 997;
+    background-color: #f7fbfe;
+    /* box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1); */
+}
+
+#header .navbar-brand {
+    color: #3498db;
+}
+
+/* Navigation Bar */
+.navbar-nav a {
+    text-transform: uppercase;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.btn-more {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    letter-spacing: 2px;
+    display: inline-block;
+    padding: 12px 28px;
+    border-radius: 4px;
+    transition: ease-in-out 0.3s;
+    color: #fff;
+    background: #3498db;
+    text-transform: uppercase;
+}
+
+.btn-more:hover {
+    background-color: #4ea5e0;
+    color: #fff;
+}
 
 /* Hero Section */
 #hero {
@@ -9,13 +64,14 @@
     background: url("../img/header.jpg") center center;
     background-size: cover;
     position: relative;
-    /* margin-top: 70px; */
+    margin-top: 70px;
     padding: 0;
 }
 
 #hero::before {
     content: "";
     background: rgba(79, 81, 82, 0.7);
+     /* background: rgba(8, 33, 39, 0.7); */
     position: absolute;
     bottom: 0;
     top: 0;
@@ -35,25 +91,62 @@
     color: #fff;
 }
 
+#hero h1 span {
+    border-bottom: 4px solid #3498db;
+}
+
 #hero h2 {
     color: rgba(255, 255, 255, 0.8);
     margin-bottom: 30px;
     font-size: 24px;
+    margin-top: 20px;
 }
 
-#hero .btn {
-    color: #fff;
-    text-transform: uppercase;
+#hero .btn-learn-more {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 13px;
     letter-spacing: 2px;
+    display: inline-block;
+    padding: 12px 28px;
+    border-radius: 4px;
+    transition: ease-in-out 0.3s;
+    color: #fff;
+    background: #3498db;
+    text-transform: uppercase;
 }
 
-/* Section */
+#hero .btn-learn-more:hover {
+    background-color: #4ea5e0;
+}
+
+/* @media (max-width: 992px) {
+    #hero {
+      height: calc(100vh - 70px);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    #hero h1 {
+      font-size: 30px;
+      line-height: 36px;
+    }
+  
+    #hero h2 {
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 30px;
+    }
+  } */
+
+/* Common Section */
 section {
     padding: 60px 0;
 }
 
 .section-bg {
     background-color: #f7fbfe;
+    /* background-color: yellow; */
 }
 
 section .title {
@@ -67,6 +160,10 @@ section .title h2 {
     margin-bottom: 20px;
     padding-bottom: 20px;
     position: relative;
+}
+
+section .title p {
+    font-weight: 600;
 }
 
 section .title h2::before {
@@ -91,7 +188,50 @@ section .title h2::after {
     left: calc(50% - 20px);
 }
 
+/* .mybtn {
+    background: #3498db;
+    border: 0;
+    padding: 10px 24px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 4px;
+}
+
+.mybtn:hover {
+    background: #5faee3;
+    color: #fff;
+} */
+
 /* What we do */
+
+
+/* jovino */
+.what-we-do .icon-box i {
+    font-size: 28px;
+    color: #3498db;
+    float: left;
+    width: 64px;
+    height: 64px;
+    background: #eaf4fb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+}
+
+.what-we-do .icon-box:hover i {
+    background-color: #3498db;
+    background: #3498db;
+    color: #fff;
+}
+/* -------------- */
+
+
+
+
+
+
 .what-we-do .icon-box {
     text-align: center;
     padding: 30px 20px;
@@ -112,10 +252,10 @@ section .title h2::after {
     transition: ease-in-out 0.3s;
 }
 
-.what-we-do .icon-box .icon i {
+/* .what-we-do .icon-box .icon i {
     color: #3498db;
     font-size: 28px;
-}
+} */
 
 .what-we-do .icon-box h4 {
     font-weight: 700;
@@ -134,15 +274,127 @@ section .title h2::after {
     box-shadow: 250px 0 250px 0 rgba(0, 0, 0, 0.1);
 }
 
-.what-we-do .icon-box:hover .icon i {
+/* .what-we-do .icon-box:hover .icon i {
     color: #3498db;
+} */
+
+/* Weekly Updates */
+.weekly-updates img {
+    width: 60%;
+    height: 60%;
 }
 
 
 /* About Us */
-#about-us li {
+.about-us h4, .about-us h5 {
+    font-weight: 700;
+ }
+
+.about-us ul {
     list-style: none;
+    padding: 0;
+    font-size: 15px;
 }
+
+.about-us ul li+li {
+    margin-top: 10px;
+}
+
+.about-us ul li {
+    position: relative;
+    padding-left: 26px;
+}
+
+.about-us ul i {
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 22px;
+    color: #3498db;
+}
+
+.about-us img {
+    border-radius: 2px;
+}
+
+.about-us .mission-vision h4 {
+    font-size: 20px;
+    font-weight: 700;
+    /* margin-top: 5px; */
+}
+
+.about-us .mission-vision i {
+    color: #3498db;
+    font-size: 48px;
+}
+
+.about-us .mission-vision p {
+    font: 15px;
+    /* color: #848484; */
+}
+
+
+/* Volunteer */
+.volunteer h4 {
+    font-weight: 700;
+}
+
+.volunteer i {
+    color: #3498db;
+    font-size: 48px;
+}
+
+.volunteer img {
+    /* border: 1px solid red; */
+    border-radius: 30% 30%;
+}
+
+
+/* Lessons */
+.dance-instructions ul {
+    list-style: none;
+    padding: 0;
+    font-size: 15px;
+}
+
+.dance-instructions ul li+li {
+    margin-top: 10px;
+}
+
+.dance-instructions ul li {
+    position: relative;
+    padding-left: 26px;
+}
+
+.dance-instructions ul i {
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 22px;
+    color: #3498db;
+}
+
+.dance-instructions img {
+    border-radius: 2px;
+}
+
+.dance-instructions h4 {
+    font-size: 20px;
+    font-weight: 700;
+    /* margin-top: 5px; */
+}
+
+.dance-instructions i {
+    color: #3498db;
+    font-size: 48px;
+}
+
+.dance-instructions p {
+    font: 15px;
+    /* color: #848484; */
+}
+
+
 
 /* Contact */
 .contact .info {
@@ -218,6 +470,10 @@ section .title h2::after {
     padding: 10px 12px;
 }
 
+.contact .email-form button[type=submit] {
+    border: 0;
+}
+
 /* Footer */
 #footer {
     padding: 0 0 30px 0;
@@ -272,38 +528,7 @@ section .title h2::after {
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Call to action */
-.cta {
-    background: linear-gradient(rgba(103, 176, 209, 0.8), rgba(103, 176, 209, 0.8)), url("../img/cta-bg.jpg") fixed center center;
-    background-size: cover;
-    padding: 60px 0;
-  }
-  
-  .cta h3 {
-    color: #fff;
-    font-size: 28px;
-    font-weight: 700;
-  }
-  
-  .cta p {
-    color: #fff;
-  }
-  
-  .cta .cta-btn {
-    font-family: "Raleway", sans-serif;
-    text-transform: uppercase;
-    font-weight: 500;
-    font-size: 16px;
-    letter-spacing: 1px;
-    display: inline-block;
-    padding: 8px 28px;
-    border-radius: 25px;
-    transition: 0.5s;
-    margin-top: 10px;
-    border: 2px solid rgba(255, 255, 255, 0.5);
-    color: #fff;
-  }
-  
-  .cta .cta-btn:hover {
-    border-color: #fff;
-  }
+
+
+
+
